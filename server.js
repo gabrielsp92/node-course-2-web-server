@@ -26,6 +26,7 @@ app.use((req, res, next)=>{
 //maintenance view
 app.use((req, res, next) => {
     res.render('maintenance.hbs');
+    next();
 });
 //public directory
 app.use(express.static(__dirname + '/public'));
