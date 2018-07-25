@@ -24,10 +24,11 @@ app.use((req, res, next)=>{
     next();//
 });
 //maintenance view
-app.use((req, res, next) => {
+/*app.use((req, res, next) => {
     res.render('maintenance.hbs');
     next();
-});
+});*/
+
 //public directory
 app.use(express.static(__dirname + '/public'));
 
